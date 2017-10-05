@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_min.xst" -ofn "D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_min.syr" 
+vhdtdtfi -lib work D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_min.v -lang verilog -prj spartan3a -o alu_min.spl -module alu_min -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a alu_min.spl D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_min.sym 
+xst -intstyle ise -ifn "D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_min.xst" -ofn "D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_min.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim alu_min.ngc alu_min_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50a-tq144-4 alu_min.ngc alu_min.ngd  
+map -intstyle ise -p xc3s50a-tq144-4 -cm area -ir off -pr off -c 100 -o alu_min_map.ncd alu_min.ngd alu_min.pcf 
+par -w -intstyle ise -ol high -t 1 alu_min_map.ncd alu_min.ncd alu_min.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu_min.twx alu_min.ncd -o alu_min.twr alu_min.pcf 
+bitgen -intstyle ise -f alu_min.ut alu_min.ncd 
+xpwr -intstyle ise alu_min.ncd alu_min.pcf -o alu_min.pwr 

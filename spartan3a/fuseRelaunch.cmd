@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_tb_isim_beh.exe" -prj "D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_tb_beh.prj" "work.alu_tb" "work.glbl" 

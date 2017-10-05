@@ -1,0 +1,33 @@
+ISim log file
+Running: D:\AssistantFile\HNS\FinalProject-master\Code\fpga\spartan3a\alu_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+                   0 REG A = 00000111 REG Z = 00000000
+                   2 REG A = 00000101 REG Z = 01000000
+                   4 REG A = 00000110 REG Z = 10000000
+                   6 REG A = 00000010 REG Z = 11001010
+                   8 REG A = 00000011 REG Z = 00001010
+                  10 REG A = 00000100 REG Z = 01001010
+                  12 REG A = 00000010 REG Z = 10001010
+                  14 REG A = 00000000 REG Z = 11010000
+                  16 REG A = 00000111 REG Z = 00010000
+                  18 REG A = 00000100 REG Z = 01010000
+                  20 REG A = 00000010 REG Z = 10010000
+                  22 REG A = 00000001 REG Z = 11011001
+                  24 REG A = 00000010 REG Z = 00011001
+                  26 REG A = 00000101 REG Z = 01011001
+                  28 REG A = 00000011 REG Z = 10011001
+                  30 REG A = 00000100 REG Z = 11100100
+                  32 REG A = 00000010 REG Z = 00100100
+                  34 REG A = 00000111 REG Z = 01100100
+                  36 REG A = 00000011 REG Z = 10100100
+Stopped at time : 38 ns : File "D:/AssistantFile/HNS/FinalProject-master/Code/fpga/spartan3a/alu_tb.v" Line 84
